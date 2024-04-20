@@ -1,22 +1,111 @@
 [
     {
-        "id": 1,
-        "entry_id": 1,
-        "name": "Jadwiga",
-        "content": "podpisuje sie"
-    }, 
-
+      "id": 1,
+      "entry_id": 1,
+      "name": "Kamil",
+      "content": "Tak, Alan Turing był naprawdę wyjątkowy. Jego wkład w rozwój informatyki jest nieoceniony."
+    },
     {
-        "id": 2,
-        "entry_id": 1,
+      "id": 2,
+      "entry_id": 2,
+      "name": "Aleksandra",
+      "content": "Sztuczna inteligencja to jedno z najbardziej ekscytujących zagadnień współczesnej nauki. Fascynujące, jak szybko się rozwija!"
+    },
+    {
+      "id": 3,
+      "entry_id": 3,
+      "name": "Kacper",
+      "content": "Programowanie to świetna zabawa! Pozwala nam kreować świat wokół nas."
+    },
+    {
+      "id": 4,
+      "entry_id": 4,
+      "name": "Martyna",
+      "content": "Matematyka to fundament wielu dziedzin nauki i technologii. Piękno abstrakcji może być inspirujące."
+    },
+    {
+      "id": 5,
+      "entry_id": 5,
+      "name": "Michał",
+      "content": "Technologiczne innowacje mają ogromny wpływ na nasze życie codzienne. Ważne, abyśmy byli świadomi tych zmian."
+    },
+    {
+      "id": 6,
+      "entry_id": 6,
+      "name": "Natalia",
+      "content": "Poznawanie nowych rzeczy jest fascynujące, zwłaszcza gdy mamy otwarty umysł i ciekawość świata."
+    },
+    {
+      "id": 7,
+      "entry_id": 7,
+      "name": "Paweł",
+      "content": "Internet to nieskończona skarbnica wiedzy, ale też wymaga ostrożności. Ważne, abyśmy potrafili filtrować informacje."
+    },
+    {
+      "id": 8,
+      "entry_id": 8,
+      "name": "Olga",
+      "content": "Rozwiązywanie problemów programistycznych może być frustrujące, ale ta euforia po znalezieniu rozwiązania jest bezcenna!"
+    },
+    {
+      "id": 9,
+      "entry_id": 9,
+      "name": "Bartosz",
+      "content": "Zgadzam się! Rozwiązywanie problemów programistycznych to jak rozwiązywanie zagadek - niezwykle satysfakcjonujące."
+    },
+    {
+      "id": 10,
+      "entry_id": 10,
+      "name": "Paulina",
+      "content": "Zgoda! Czasem trudno jest zacząć, ale ważne jest, abyśmy nieustannie dążyli do swoich celów."
+    },
+    {
+        "id": 11,
+        "entry_id": 2,
+        "name": "Dominik",
+        "content": "Rzeczywiście, rozwój sztucznej inteligencji może przynieść wiele korzyści, ale musimy również monitorować jej potencjalne zagrożenia."
+    },
+    {
+        "id": 12,
+        "entry_id": 2,
+        "name": "Wiktoria",
+        "content": "Ciekawe, jak daleko sięgnie rozwój sztucznej inteligencji w przyszłości. Czy kiedyś stworzymy świadomość maszyn?"
+    },
+    {
+        "id": 13,
+        "entry_id": 5,
+        "name": "Konrad",
+        "content": "Tak, technologia może być podwójnym ostrzem. Ważne, abyśmy stosowali ją mądrze i odpowiedzialnie."
+    },
+    {
+        "id": 14,
+        "entry_id": 5,
+        "name": "Nina",
+        "content": "Czasem zastanawiam się, jak wyglądałby świat bez technologii. Czy bylibyśmy bardziej związani ze sobą?"
+    },
+    {
+        "id": 15,
+        "entry_id": 6,
+        "name": "Rafał",
+        "content": "Prawda, nauka to podróż po niezbadanych obszarach. Zawsze jest coś nowego do odkrycia!"
+    },
+    {
+        "id": 16,
+        "entry_id": 6,
+        "name": "Martyna",
+        "content": "Zgadzam się! To niesamowite, jak wiele możliwości otwiera się przed nami, gdy się uczymy."
+    },
+    {
+        "id": 17,
+        "entry_id": 9,
         "name": "Oliwia",
-        "content": "potwierdzam"
-    }, 
-
+        "content": "Rozwiązując problemy programistyczne, często odkrywam nowe sposoby myślenia i podejścia do problemów."
+    },
     {
-        "id": 3,
-        "entry_id": 1,
-        "name": "Ula",
-        "content": "pra pra pra"
-    }
-]
+        "id": 18,
+        "entry_id": 9,
+        "name": "Paweł",
+        "content": "Dokładnie! Każdy błąd to lekcja, która prowadzi nas do większej wiedzy i doświadczenia."
+    }      
+  ]
+  

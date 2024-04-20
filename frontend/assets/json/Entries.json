@@ -1,13 +1,83 @@
 [
     {
-        "id": 1,
-        "name": "John",
-        "content": "Alan Turing król"
-    }, 
-
+      "id": 1,
+      "name": "Karolina",
+      "content": "Alan Turing był genialny!"
+    },
     {
-        "id": 2,
-        "name": "Marysia",
-        "content": "bla bla bla"
+      "id": 2,
+      "name": "Mateusz",
+      "content": "Sztuczna inteligencja rozwija się w niesamowitym tempie."
+    },
+    {
+      "id": 3,
+      "name": "Patryk",
+      "content": "Programowanie to fascynująca dziedzina, która pozwala tworzyć nowe rzeczy."
+    },
+    {
+      "id": 4,
+      "name": "Natalia",
+      "content": "Matematyka jest piękna w swojej abstrakcji."
+    },
+    {
+      "id": 5,
+      "name": "Jakub",
+      "content": "Technologia zmienia nasz świat w sposób, o którym wcześniej nie śniło się nawet myśleć."
+    },
+    {
+      "id": 6,
+      "name": "Anna",
+      "content": "Nauka to nieustająca przygoda poznawania nowych rzeczy."
+    },
+    {
+      "id": 7,
+      "name": "Piotr",
+      "content": "Innowacje technologiczne mają ogromny wpływ na społeczeństwo."
+    },
+    {
+      "id": 8,
+      "name": "Katarzyna",
+      "content": "Internet to nieskończona skarbnica wiedzy i możliwości."
+    },
+    {
+      "id": 9,
+      "name": "Tomasz",
+      "content": "Rozwiązanie problemów programistycznych daje ogromną satysfakcję."
+    },
+    {
+      "id": 10,
+      "name": "Magdalena",
+      "content": "Wszystko, co musisz zrobić, to zacząć. Wszystko inne przyjdzie w odpowiednim czasie."
+    },
+    {
+        "id": 11,
+        "name": "Anna",
+        "content": "Odkrywanie nowych rzeczy może być trudne, ale warto trzymać się pasji i ciekawości. To prowadzi do niezwykłych odkryć!"
+    },
+    {
+        "id": 12,
+        "name": "Anna",
+        "content": "Nauka to nie tylko zdobywanie wiedzy, ale także rozwijanie umiejętności krytycznego myślenia i analizy."
+    },
+    {
+        "id": 13,
+        "name": "Tomasz",
+        "content": "Rozwiązując problemy programistyczne, uczymy się elastyczności myślenia i znajdowania różnych dróg rozwiązania."
+    },
+    {
+        "id": 14,
+        "name": "Tomasz",
+        "content": "Nie ma nic satysfakcjonującego jak rozwiązanie problemu, który wydawał się niemożliwy do pokonania. To napędza nas do dalszych osiągnięć!"
+    },    
+    {
+        "id": 15,
+        "name": "Mateusz",
+        "content": "Sztuczna inteligencja rozwija się w niesamowitym tempie, ale ważne jest, abyśmy nie zapominali o etycznych aspektach jej rozwoju."
+    },
+    {
+        "id": 16,
+        "name": "Mateusz",
+        "content": "Kontynuując dyskusję o sztucznej inteligencji, warto zastanowić się, jak możemy wykorzystać jej potencjał do dobra całego społeczeństwa."
     }
-]
+  ]
+  

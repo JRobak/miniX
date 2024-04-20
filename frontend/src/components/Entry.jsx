@@ -4,13 +4,25 @@ import { useEffect, useState } from 'react';
 import {Link} from 'react-router-dom'
 
 const urlComments = '../assets/json/Comments.json'
+const urlEntry = '../assets/json/Entries.json'
 
 export default function Entry() {
     const parms = useParams();
+    const [entry, setEntry] = useState([]);
     const [comments, setComments] = useState([]);
 
     useEffect(() => {
         const comment_id = parseInt(parms.id);
+
+        fetch(urlEntry)
+            .then(response => response.json())
+            .then(data => {
+                const filteredData = data.filter(entry => entry.id===comment_id);
+                setEntry(filteredData);
+            })
+            .catch(error => {
+                console.error('Error fetching data:', error);
+            });
 
         fetch(urlComments)
             .then(response => response.json())
@@ -25,7 +37,13 @@ export default function Entry() {
 
     return (
         <>
-            <h1>Wpis</h1>
+            {console.log(entry)}
+            {entry.map(entry => (
+                <div key={entry.id} className="entry">
+                    <h2><Link to={`/profile/${entry.name}`}>{entry.name}</Link></h2>
+                    <p><Link>{entry.content}</Link></p>
+                </div>
+            ))}
             {comments.map(comment => (
                 <div key={comment.id} className="comment">
                     <h2><Link to={`/profile/${comment.name}`}>{comment.name}</Link></h2>

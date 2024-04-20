@@ -2,16 +2,16 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import {Link} from 'react-router-dom'
 
-const urlentry = './assets/json/entries.json'
+const urlEntry = './assets/json/Entries.json'
 
 export default function Home() {
-    const [entries, setentries] = useState([]);
+    const [entries, setEntries] = useState([]);
 
     useEffect(() => {
-        fetch(urlentry)
+        fetch(urlEntry)
             .then(response => response.json())
             .then(data => {
-                setentries(data);
+                setEntries(data);
             })
             .catch(error => {
                 console.error('Error fetching data:', error);
@@ -23,7 +23,7 @@ export default function Home() {
             <h1>Strona Główna</h1>
             {entries.map(entry => (
                 <div key={entry.id} className="entry">
-                    <h2><Link to={`/profile/${entry.name}`}>{entry.name}</Link></h2>
+                    <h2><Link to={`/profile/${entry.name}`} >{entry.name}</Link></h2>
                     <p><Link to={`/entry/${entry.id}`}>{entry.content}</Link></p>
                 </div>
             ))}

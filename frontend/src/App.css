@@ -31,6 +31,17 @@ a {
   border-left: 4px solid #ffc951;
 }
 
+.comment {
+  margin-top: 20px;
+  margin-left: 1.4rem;
+  padding-left: 1.1rem;
+  padding-bottom: 1px;
+  border-left: 4px solid #41d287;
+}
+.comment p {
+  color: #d9ffeb;
+}
+
 #LinkToHome {
   position: fixed;
   top: 30px;
