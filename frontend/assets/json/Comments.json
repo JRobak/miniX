@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "entry_id": 1,
+        "name": "Jadwiga",
+        "content": "podpisuje sie"
+    }, 
+
+    {
+        "id": 2,
+        "entry_id": 1,
+        "name": "Oliwia",
+        "content": "potwierdzam"
+    }, 
+
+    {
+        "id": 3,
+        "entry_id": 1,
+        "name": "Ula",
+        "content": "pra pra pra"
+    }
+]
