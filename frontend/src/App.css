@@ -62,3 +62,23 @@ a {
   color: #e1ad3b;
   text-shadow: 3px 3px 5px #000000;
 }
+
+form {
+  border-left: 4px solid #5974ae;
+  padding-left: 1.4rem;
+  font-size: 1.2rem;
+  text-align: start;
+}
+input, textarea {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  padding: 0.3rem;
+}
+form button{
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  border: 0px solid #586d9c !important;
+}
+.butttonToActiveForm {  
+  border-left: 4px solid #5974ae !important;
+}

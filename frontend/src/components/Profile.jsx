@@ -14,6 +14,7 @@ export default function Profile() {
         fetch(urlEntry)
             .then(response => response.json())
             .then(data => {
+                data.sort((a, b) => b.id - a.id);
                 const filteredData = data.filter(entry => entry.name===username);
                 setEntries(filteredData);
             })
