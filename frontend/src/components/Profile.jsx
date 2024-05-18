@@ -3,15 +3,27 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from 'react';
 import {Link} from 'react-router-dom'
 
-const urlEntry = '../assets/json/Entries.json'
-
 export default function Profile() {
     const parms = useParams();
     const [entries, setEntries] = useState([]);
 
-    useEffect(() => {
-        const username = parms.id;
-        fetch(urlEntry)
+    const username = parms.id;
+
+    useEffect(() => {        
+        GetEntriesFromBackend();
+        
+        // in munute refresh
+        const interval = setInterval(() => {
+            GetEntriesFromBackend();
+        }, 60000); 
+
+       return () => clearInterval(interval);
+    }, []);
+
+    function GetEntriesFromBackend() {
+        fetch('http://127.0.0.1:5000/getEveryEntries', {
+            method: 'GET',
+        })
             .then(response => response.json())
             .then(data => {
                 data.sort((a, b) => b.id - a.id);
@@ -21,7 +33,7 @@ export default function Profile() {
             .catch(error => {
                 console.error('Error fetching data:', error);
             });
-    }, []);
+    }
 
     return (
         <>

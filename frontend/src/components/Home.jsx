@@ -3,8 +3,6 @@ import { useEffect, useState } from 'react';
 import {Link} from 'react-router-dom'
 import Form from './Form';
 
-const urlEntry = './assets/json/Entries.json'
-
 export default function Home() {
     const [entries, setEntries] = useState([]);
     const [isActive, setActive] = useState(false);
@@ -13,45 +11,48 @@ export default function Home() {
         content: ''
     });
     const [entryCount, setEntryCount] = useState(0);
-
+   
     useEffect(() => {
-        GetEntireFromFile();
+         // on start
+        GetEntiresFromBackend();
+
+        // in munute refresh
+        const interval = setInterval(() => {
+            GetEntiresFromBackend();
+        }, 60000); 
+
+        return () => clearInterval(interval);
     }, []);
 
-    function GetEntireFromFile() {
-        fetch(urlEntry)
-            .then(response => response.json())
-            .then(data => {
-                data.sort((a, b) => b.id - a.id);
-                setEntries(data);
-                setEntryCount(data.length);
-            })
-            .catch(error => {
-                console.error('Error fetching data:', error);
-            });
+    function GetEntiresFromBackend() {
+        fetch('http://127.0.0.1:5000/getEveryEntries', {
+            method: 'GET',
+        })
+        .then(response => response.json())
+        .then(data => {
+            data.sort((a, b) => b.id - a.id);
+            setEntries(data);
+            setEntryCount(data.length);
+        })
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
     }
 
     const handleSubmit = (e) => {
-        // nie działa dodawanie nowego wpisu do pozostałych
         e.preventDefault();
-        const newEntry = {
-            id: entryCount + 1,
-            name: formData.name,
-            content: formData.content
-        };
-        fetch(urlEntry, {
+        fetch('http://127.0.0.1:5000/addNewEntry', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify(newEntry),
+                body: JSON.stringify({id: entryCount + 1, name: formData.name, content: formData.content}),
             })
             .then(response => response.json())
             .then(data => {
-                setEntries(prevEntries => [...prevEntries, newEntry]); 
                 setFormData({ name: '', content: '' });
                 setEntryCount(entryCount + 1);
-                GetEntireFromFile();
+                GetEntiresFromBackend();
             })
             .catch(error => {
                 console.error('Error adding entry:', error);
@@ -61,7 +62,7 @@ export default function Home() {
     
     return (
         <>
-            <h1>Strona Główna</h1>
+            <h1>Strona Główna</h1> 
             {isActive && <Form handleSubmit={handleSubmit}  formData={formData}  setFormData={setFormData}/>}   
             <div className="butttonToActiveForm"><button onClick={() => setActive(!isActive)}>{isActive ? "Schowaj": "Pokaż"} formularz do dodawania wpisu</button></div>
             {entries.map(entry => (

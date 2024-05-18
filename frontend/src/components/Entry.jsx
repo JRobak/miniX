@@ -4,9 +4,6 @@ import { useEffect, useState } from 'react';
 import {Link} from 'react-router-dom'
 import Form from './Form';
 
-const urlComments = '../assets/json/Comments.json'
-const urlEntry = '../assets/json/Entries.json'
-
 export default function Entry() {
     const parms = useParams();
     const [entry, setEntry] = useState([]);
@@ -17,10 +14,13 @@ export default function Entry() {
         content: ''
     });
 
-    useEffect(() => {
-        const comment_id = parseInt(parms.id);
+    const comment_id = parseInt(parms.id);
 
-        fetch(urlEntry)
+    useEffect(() => {
+        // on start
+        fetch('http://127.0.0.1:5000/getEveryEntries', {
+            method: 'GET',
+        })
             .then(response => response.json())
             .then(data => {
                 data.sort((a, b) => b.id - a.id);
@@ -29,9 +29,21 @@ export default function Entry() {
             })
             .catch(error => {
                 console.error('Error fetching data:', error);
-            });
+            });     
+        GetCommentsFromBackend();  
 
-        fetch(urlComments)
+        // in munute refresh
+        const interval = setInterval(() => {
+            GetCommentsFromBackend();
+        }, 60000); 
+
+       return () => clearInterval(interval);
+   }, []);
+
+    function GetCommentsFromBackend() {
+        fetch('http://127.0.0.1:5000/getEveryComments', {
+            method: 'GET',
+        })
             .then(response => response.json())
             .then(data => {
                 const filteredData = data.filter(comment => comment.entry_id===comment_id);
@@ -40,9 +52,26 @@ export default function Entry() {
             .catch(error => {
                 console.error('Error fetching data:', error);
             });
-    }, [parms.id]);
+    }
 
-    const handleSubmit = (e) => {}
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        fetch('http://127.0.0.1:5000/addNewComment', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({entry_id: parms.id, name: formData.name, content: formData.content}),
+            })
+            .then(response => response.json())
+            .then(data => {
+                setFormData({ name: '', content: '' });
+                GetCommentsFromBackend();
+            })
+            .catch(error => {
+                console.error('Error adding entry:', error);
+            });
+    };
 
     return (
         <>

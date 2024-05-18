@@ -1,83 +1,97 @@
 [
     {
-      "id": 1,
-      "name": "Karolina",
-      "content": "Alan Turing był genialny!"
+        "content": "Alan Turing był genialny!",
+        "id": 1,
+        "name": "Karolina"
     },
     {
-      "id": 2,
-      "name": "Mateusz",
-      "content": "Sztuczna inteligencja rozwija się w niesamowitym tempie."
+        "content": "Sztuczna inteligencja rozwija się w niesamowitym tempie.",
+        "id": 2,
+        "name": "Mateusz"
     },
     {
-      "id": 3,
-      "name": "Patryk",
-      "content": "Programowanie to fascynująca dziedzina, która pozwala tworzyć nowe rzeczy."
+        "content": "Programowanie to fascynująca dziedzina, która pozwala tworzyć nowe rzeczy.",
+        "id": 3,
+        "name": "Patryk"
     },
     {
-      "id": 4,
-      "name": "Natalia",
-      "content": "Matematyka jest piękna w swojej abstrakcji."
+        "content": "Matematyka jest piękna w swojej abstrakcji.",
+        "id": 4,
+        "name": "Natalia"
     },
     {
-      "id": 5,
-      "name": "Jakub",
-      "content": "Technologia zmienia nasz świat w sposób, o którym wcześniej nie śniło się nawet myśleć."
+        "content": "Technologia zmienia nasz świat w sposób, o którym wcześniej nie śniło się nawet myśleć.",
+        "id": 5,
+        "name": "Jakub"
     },
     {
-      "id": 6,
-      "name": "Anna",
-      "content": "Nauka to nieustająca przygoda poznawania nowych rzeczy."
+        "content": "Nauka to nieustająca przygoda poznawania nowych rzeczy.",
+        "id": 6,
+        "name": "Anna"
     },
     {
-      "id": 7,
-      "name": "Piotr",
-      "content": "Innowacje technologiczne mają ogromny wpływ na społeczeństwo."
+        "content": "Innowacje technologiczne mają ogromny wpływ na społeczeństwo.",
+        "id": 7,
+        "name": "Piotr"
     },
     {
-      "id": 8,
-      "name": "Katarzyna",
-      "content": "Internet to nieskończona skarbnica wiedzy i możliwości."
+        "content": "Internet to nieskończona skarbnica wiedzy i możliwości.",
+        "id": 8,
+        "name": "Katarzyna"
     },
     {
-      "id": 9,
-      "name": "Tomasz",
-      "content": "Rozwiązanie problemów programistycznych daje ogromną satysfakcję."
+        "content": "Rozwiązanie problemów programistycznych daje ogromną satysfakcję.",
+        "id": 9,
+        "name": "Tomasz"
     },
     {
-      "id": 10,
-      "name": "Magdalena",
-      "content": "Wszystko, co musisz zrobić, to zacząć. Wszystko inne przyjdzie w odpowiednim czasie."
+        "content": "Wszystko, co musisz zrobić, to zacząć. Wszystko inne przyjdzie w odpowiednim czasie.",
+        "id": 10,
+        "name": "Magdalena"
     },
     {
+        "content": "Odkrywanie nowych rzeczy może być trudne, ale warto trzymać się pasji i ciekawości. To prowadzi do niezwykłych odkryć!",
         "id": 11,
-        "name": "Anna",
-        "content": "Odkrywanie nowych rzeczy może być trudne, ale warto trzymać się pasji i ciekawości. To prowadzi do niezwykłych odkryć!"
+        "name": "Anna"
     },
     {
+        "content": "Nauka to nie tylko zdobywanie wiedzy, ale także rozwijanie umiejętności krytycznego myślenia i analizy.",
         "id": 12,
-        "name": "Anna",
-        "content": "Nauka to nie tylko zdobywanie wiedzy, ale także rozwijanie umiejętności krytycznego myślenia i analizy."
+        "name": "Anna"
     },
     {
+        "content": "Rozwiązując problemy programistyczne, uczymy się elastyczności myślenia i znajdowania różnych dróg rozwiązania.",
         "id": 13,
-        "name": "Tomasz",
-        "content": "Rozwiązując problemy programistyczne, uczymy się elastyczności myślenia i znajdowania różnych dróg rozwiązania."
+        "name": "Tomasz"
     },
     {
+        "content": "Nie ma nic satysfakcjonującego jak rozwiązanie problemu, który wydawał się niemożliwy do pokonania. To napędza nas do dalszych osiągnięć!",
         "id": 14,
-        "name": "Tomasz",
-        "content": "Nie ma nic satysfakcjonującego jak rozwiązanie problemu, który wydawał się niemożliwy do pokonania. To napędza nas do dalszych osiągnięć!"
-    },    
-    {
-        "id": 15,
-        "name": "Mateusz",
-        "content": "Sztuczna inteligencja rozwija się w niesamowitym tempie, ale ważne jest, abyśmy nie zapominali o etycznych aspektach jej rozwoju."
+        "name": "Tomasz"
     },
     {
+        "content": "Sztuczna inteligencja rozwija się w niesamowitym tempie, ale ważne jest, abyśmy nie zapominali o etycznych aspektach jej rozwoju.",
+        "id": 15,
+        "name": "Mateusz"
+    },
+    {
+        "content": "Kontynuując dyskusję o sztucznej inteligencji, warto zastanowić się, jak możemy wykorzystać jej potencjał do dobra całego społeczeństwa.",
         "id": 16,
-        "name": "Mateusz",
-        "content": "Kontynuując dyskusję o sztucznej inteligencji, warto zastanowić się, jak możemy wykorzystać jej potencjał do dobra całego społeczeństwa."
+        "name": "Mateusz"
+    },
+    {
+        "content": "wrg",
+        "id": 17,
+        "name": "ereg"
+    },
+    {
+        "content": "fef",
+        "id": 18,
+        "name": "e"
+    },
+    {
+        "content": "d",
+        "id": 19,
+        "name": "e"
     }
-  ]
-  
+]

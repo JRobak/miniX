@@ -1,20 +1,19 @@
-from flask import Flask, json, jsonify, request
-import os
+from flask import Flask, g
+from flask_cors import CORS
+from routes import entries, comments
 
 app = Flask(__name__)
+CORS(app)
 
-comments_file_path = 'json/Comments.json'
-entries_file_path = 'json/Entries.json'
+app.register_blueprint(entries.entries_)
+app.register_blueprint(comments.comments_)
 
 
-@app.route('/getEveryEntries', methods=['GET'])
-def getEveryEntries():
-    print('1')
-    if request.method == 'GET':
-        with open(entries_file_path, 'r') as f:
-            entries = json.load(f)
-        return jsonify(entries)
+@app.before_request
+def before_request():
+    g.comments_file_path = '../frontend/assets/json/Comments.json'
+    g.entries_file_path = '../frontend/assets/json/Entries.json'
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=5000)
